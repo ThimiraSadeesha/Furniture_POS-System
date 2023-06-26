@@ -1,0 +1,7 @@
+DBName-Funiture_DB
+
+
+admin	12345	Cashier
+hana	12345	Cashier
+sadee	2468	Admin
+test	1234	Admin

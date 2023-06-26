@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C86FB85-7629-4F43-A1AE-BBD3A00FB7AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>furniture</RootNamespace>
+    <AssemblyName>furniture</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bill.Designer.cs">
+      <DependentUpon>bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calculate.Designer.cs">
+      <DependentUpon>calculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cashier.Designer.cs">
+      <DependentUpon>cashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteItem.Designer.cs">
+      <DependentUpon>deleteItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteSup.Designer.cs">
+      <DependentUpon>DeleteSup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deleteuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deleteuser.Designer.cs">
+      <DependentUpon>Deleteuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edititem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edititem.Designer.cs">
+      <DependentUpon>edititem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editstaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editstaff.Designer.cs">
+      <DependentUpon>Editstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashborad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashborad.Designer.cs">
+      <DependentUpon>Dashborad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSup.Designer.cs">
+      <DependentUpon>EditSup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funiture_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Funiture_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Funiture_DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Funiture_DBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Funiture_DBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Funiture_DBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log.Designer.cs">
+      <DependentUpon>log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="records.Designer.cs">
+      <DependentUpon>records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff.Designer.cs">
+      <DependentUpon>staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stoks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stoks.Designer.cs">
+      <DependentUpon>stoks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suppliers.Designer.cs">
+      <DependentUpon>suppliers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bill.resx">
+      <DependentUpon>bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calculate.resx">
+      <DependentUpon>calculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashier.resx">
+      <DependentUpon>cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteItem.resx">
+      <DependentUpon>deleteItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteSup.resx">
+      <DependentUpon>DeleteSup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deleteuser.resx">
+      <DependentUpon>Deleteuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edititem.resx">
+      <DependentUpon>edititem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editstaff.resx">
+      <DependentUpon>Editstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashborad.resx">
+      <DependentUpon>Dashborad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSup.resx">
+      <DependentUpon>EditSup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log.resx">
+      <DependentUpon>log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="records.resx">
+      <DependentUpon>records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff.resx">
+      <DependentUpon>staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="stoks.resx">
+      <DependentUpon>stoks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suppliers.resx">
+      <DependentUpon>suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Funiture_DBDataSet.xsc">
+      <DependentUpon>Funiture_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Funiture_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Funiture_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Funiture_DBDataSet.xss">
+      <DependentUpon>Funiture_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Funiture_DBDataSet1.xsc">
+      <DependentUpon>Funiture_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Funiture_DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Funiture_DBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Funiture_DBDataSet1.xss">
+      <DependentUpon>Funiture_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Funiture_DBDataSet2.xsc">
+      <DependentUpon>Funiture_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Funiture_DBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Funiture_DBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Funiture_DBDataSet2.xss">
+      <DependentUpon>Funiture_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-06-23 at 18.29.29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-06-23 at 18.29.29 %281%29.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
